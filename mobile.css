@@ -1,0 +1,188 @@
+
+@font-face {
+	font-family: Press Start;
+	src: url('PrStart.ttf')
+}
+
+html,body{
+height: 100%
+width: 960px;
+background-color: #014e9d;
+}
+
+.fileUpload {
+
+display:none;
+}
+textarea {
+overflow-y: scroll;
+border: rgba(254,254,254,0);
+background-color: #014e9d url(whitey.png)
+-webkit-appearance: none; 
+
+}
+#musicBox{
+display:none;
+z-index:1;
+}
+.musicbox_unchecked{
+background-color: #014e9d;
+border: 10px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 8px;
+padding-top: 5px;
+padding-bottom: 4px;
+z-index:1;
+}
+
+.musicbox_checked {
+z-index:1;
+background-color: #61aefd;
+border: 10px solid #61aefd;
+color:#61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 8px;
+padding-top: 5px;
+padding-bottom: 4px;
+}
+#docBody {
+-webkit-appearance: none; 
+padding-top: 20px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+width: 100%;
+height: 85%;
+ resize: none;
+ outline: none;
+border: none;
+font-family: Press Start, sans-serif; 
+font-size: 12px;
+background-color: #014e9d;
+color: 61aefd;
+
+
+overflow-y: scroll;
+
+}
+
+
+#buttonTray {
+height:10%;
+background-color: #014e9d;
+}
+
+.myButtons {
+background-color: #014e9d;
+border: 1px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+font-size: 14px;
+margin:1px;
+display: block-inline;
+float: left;
+padding: 2px;
+padding-top: 1px;
+padding-bottom: 1px;
+display: none;
+}
+
+.myButtons:hover{
+background-color: #61aefd;
+color:#014e9d;
+cursor: pointer;
+
+}
+#box_unchecked{
+
+}
+
+#box_checked {
+width:30px;
+height:30px;
+background-color:  61aefd;
+float:right;
+display: block-inline;
+margin-top: 20px;
+}
+#resumeEditingButton {
+
+float: right;
+border: none;
+margin-top: 20px;
+
+}
+
+.myButtons_alt {
+background-color: #014e9d;
+border: 10px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+font-size: 5px;
+margin:1px;
+display: block-inline;
+float: left;
+padding: 2px;
+padding-top: 1px;
+padding-bottom: 1px;
+display:none;
+}
+.mobileButtons{
+background-color: #014e9d;
+border: 3px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+font-size: 14px;
+margin:1px;
+display: block-inline;
+float: left;
+padding: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+display: block-inline;
+
+}
+.mobileButtons_right{
+background-color: #014e9d;
+border: 3px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+font-size: 14px;
+margin:1px;
+display: block-inline;
+float: right;
+padding: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+display: block-inline;
+
+}
+
+}
+.box_unchecked{
+width:10px;
+height:10px;
+background-color:  014e9d;
+float:right;
+display: block-inline;
+margin-top: 2px;
+border: 5px solid #61aefd;
+display:none;
+}
+
+.box_checked {
+width:10px;
+height:10px;
+background-color:  61aefd;
+float:right;
+display: block-inline;
+margin-top: 2px;
+display:none;
+}

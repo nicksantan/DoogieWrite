@@ -1,0 +1,158 @@
+
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" 
+      href="mobile.css" media="only screen and (max-width: 480px)" />
+<link rel="stylesheet" type="text/css" 
+      href="style.css" media="screen and (min-width: 481px)" />
+
+<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0" />
+
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>DoogieWrite</title>
+
+
+<body>
+<textarea id = "docBody">
+</textarea>
+
+<div id = "buttonTray">
+<div id = "saveButton" class = "myButtons">
+SAVE
+</div>
+<div id = "loadButton" class = "myButtons">
+LOAD
+</div>
+<div id = "fU" class = "fileUpload">
+<input type="file" id="input" onchange="fileImport(this.files)">
+</div>
+<!-- <div id ="changeColorButton" class = "myButtons">
+Change colors
+</div>
+--!> 
+<div id = "resumeEditingButton" class = "myButtons_alt">
+Resume editing this document next time
+</div>
+<div id = "box" class = "box_unchecked">
+
+</div>
+
+
+</div>
+</div>
+
+<script = "text/javascript">
+
+function init(){
+console.log("init");
+
+check = localStorage.getItem("savePref")
+ if(check==0){
+    
+     var box = document.getElementById("box");
+     box.className = "box_unchecked";
+     }
+     else if (check==1){
+     var box = document.getElementById("box");
+     box.className = "box_checked";
+     var loadPrevText = localStorage.getItem("storedDoc")
+    document.getElementById("docBody").value = loadPrevText;
+    document.addEventListener("keyup", saveLocal, false);
+}
+
+var sB = document.getElementById("saveButton");
+sB.addEventListener("click", saveLocal, false);
+
+var lB = document.getElementById("loadButton");
+lB.addEventListener("click", load, false);
+
+var box = document.getElementById("box");
+box.addEventListener("click", toggleCheck, false);
+
+
+//set default values
+
+
+
+
+//document.getElementById('input').addEventListener('change', fileImport, false)
+}
+
+
+function loaded(evt){
+var fileString = evt.target.result;
+console.log(fileString);
+}
+
+function toggleCheck(){
+//if unchecked, check it and turn on local storage listener and save preference on
+    if(check==0){
+     check=1;
+     var box = document.getElementById("box");
+     box.className = "box_checked";
+     //turn on listener and save
+     saveLocal();
+      document.addEventListener("keyup", saveLocal, false);
+     //set save pref to on
+     localStorage.setItem("savePref", check);
+     }
+     else if (check==1){
+     check=0;
+     var box = document.getElementById("box");
+     box.className = "box_unchecked";
+      document.removeEventListener("keyup", saveLocal, false);
+      localStorage.setItem("savePref", check);
+     }
+//otherwise, uncheck it, turn off local storage listener and save preference off
+}
+function fileImport( files) {
+console.log("import");
+    confirm("Are you sure you want to load the selected file? This will overwrite any unsaved text that you are working on.");
+    var file = files[0];
+    console.log(file);
+    var fileReader = new FileReader();
+   fileReader.readAsText(file);
+  fileReader.onerror = function (evt) {  
+                   console.log("error occured");
+              }  
+    fileReader.onload = function(evt) {
+               console.log(evt.target.result); 
+                    document.getElementById("docBody").value = event.target.result;
+         }
+
+   // var loadPrevText = localStorage.getItem("storedDoc")
+//document.getElementById("docBody").value = fileReader.readAsText(file).result;
+
+var loadBox = document.getElementById("fU")
+loadBox.className = "fileUpload";
+};
+
+
+
+function saveLocal(){
+console.log("save")
+var currentDoc = document.getElementById("docBody").value;
+console.log(currentDoc);
+localStorage.setItem("storedDoc", currentDoc);
+
+var v = localStorage.getItem("storedDoc")
+console.log(v);
+}
+
+function load(){
+console.log("load")
+//first show the load box
+var loadBox = document.getElementById("fU");
+loadBox.className = "fileUploadShown";
+}
+
+window.addEventListener("load", init, false);
+
+</script>
+
+</body>
+
+</html>
+

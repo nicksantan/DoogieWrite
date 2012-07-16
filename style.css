@@ -1,0 +1,178 @@
+html, body{
+background-color: #014e9d;
+
+
+}
+
+::-webkit-scrollbar {  
+    height: 1.5ex;  
+     
+    }  
+  
+::-webkit-scrollbar-thumb {  
+   
+    background: #61aefd;  
+       
+     
+      }
+      
+@font-face {
+	font-family: Press Start;
+	src: url('PrStart.ttf')
+}
+
+
+
+
+
+#docBody {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+width: 100%;
+height: 87%;
+ resize: none;
+ outline: none;
+border: 0px solid blue;
+font-family: Press Start, sans-serif; 
+font-size: 100%;
+background-color: #014e9d;
+color: 61aefd;
+border-top: 0px solid #7373ff;
+
+
+}
+
+.mobileButtons{
+display: none;
+
+}
+.mobileButtons_right{
+
+display:none;
+
+}
+#buttonTray {
+height:10%;
+background-color: #014e9d;
+
+}
+#input {
+position:absolute;
+top:0;
+left:0;
+height:50px;
+border: red 1px solid;
+width: 120px; /* was 120 */
+opacity: 0;
+}
+.myButtons {
+background-color: #014e9d;
+border: 10px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+#loadButton {
+position:relative;
+
+}
+.myButtons:hover{
+background-color: #61aefd;
+color:#014e9d;
+cursor: pointer;
+
+}
+
+.box_unchecked{
+width:20px;
+height:20px;
+background-color:  014e9d;
+float:right;
+display: block-inline;
+margin-top: 20px;
+border: 5px solid #61aefd;
+}
+
+.box_checked {
+width:30px;
+height:30px;
+background-color:  61aefd;
+float:right;
+display: block-inline;
+margin-top: 20px;
+}
+
+#musicBox{
+z-index:1;
+}
+.musicbox_unchecked{
+background-color: #014e9d;
+border: 10px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 8px;
+padding-top: 5px;
+padding-bottom: 4px;
+z-index:1;
+}
+
+.musicbox_checked {
+z-index:1;
+background-color: #61aefd;
+border: 10px solid #61aefd;
+color:#61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 8px;
+padding-top: 5px;
+padding-bottom: 4px;
+}
+#resumeEditingButton {
+
+float: right;
+border: none;
+margin-top: 20px;
+
+}
+.fileUpload {
+
+display:none;
+}
+
+.fileUploadShown{
+opacity:0;
+position:relative;
+top: 0;
+left:0;
+width:70px;
+height:10px;
+border:0 px solid red;
+overflow: hidden;
+}
+
+.myButtons_alt {
+background-color: #014e9d;
+border: 10px solid #61aefd;
+color:61aefd;
+font-family: Press Start, sans-serif; 
+margin:10px;
+display: block-inline;
+float: left;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}

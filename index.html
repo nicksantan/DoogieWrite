@@ -1,0 +1,73 @@
+<html manifest="cache.manifest">
+<!-- 
+Amazing plugin for 'add to home screen' bubble provided by 
+Matteo Spinelli under the MIT license at
+http://cubiq.org/add-to-home-screen !
+--!>
+
+<head>
+
+    <link rel="stylesheet" href="add2home.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 480px)" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen and (min-width: 481px)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="application/javascript" src="add2home.js"></script>
+    <script type = "text/javascript" src = "jquery-1.5.min.js"></script> 
+    <script type = "text/javascript" src = "DoogieWrite.js"></script>
+     
+    <title>DoogieWrite</title>
+
+</head>
+
+<body>
+    
+    <textarea id = "docBody" autocorrect = "off">
+    </textarea>
+
+<div id = "buttonTray">
+    <div id = "emailButton" class = "mobileButtons">
+        EMAIL
+    </div>
+    <div id = "autosaveButton" class = "mobileButtons_right">
+        AUTOSAVE OFF
+    </div>
+    <div id = "saveButton" class = "myButtons">
+        SAVE
+    </div>
+    <div id = "loadButton" class = "myButtons">
+        <input type="file" id="input" onchange="fileImport(this.files)">
+        LOAD
+    </div>
+    <div id = "musicbox" class = "musicbox_unchecked">
+        <img src = "note2.png" id = notePic>
+    </div>
+
+    <!-- <div id ="changeColorButton" class = "myButtons">
+        Change colors
+    </div>
+    --!> 
+
+    <div id = "resumeEditingButton" class = "myButtons_alt">
+        Resume editing this document next time
+    </div>
+    <div id = "box" class = "box_unchecked">
+    </div>
+</div>
+
+<audio preload="none" autobuffer id = "audioPl"> 
+    <source src="doogie.mp3" />
+</audio>
+
+<script = "text/javascript">
+
+
+</script>
+
+</body>
+
+</html>
+
