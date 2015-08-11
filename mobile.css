@@ -1,4 +1,6 @@
 
+/* Load fonts*/
+
 @font-face {
     font-family: 'press_startregular';
     src: url('fonts/prstart-webfont.eot');
@@ -9,164 +11,59 @@
          url('fonts/prstart-webfont.svg#press_startregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 html,body{
-height: 100%;
-width: 100%;
-background-color: #014e9d;
-margin: 0;
-
+	height: 100%;
+	width: 100%;
+	background-color: #014e9d;
+	margin: 0;
 }
 
-.fileUpload {
-
-display:none;
-}
 textarea {
-overflow-y: scroll;
-border: rgba(254,254,254,0);
-background-color: #014e9d url(whitey.png)
--webkit-appearance: none; 
-
+	overflow-y: scroll;
+	border: rgba(254,254,254,0);
+	background-color: #014e9d;
+	-webkit-appearance: none; 
 }
-#music-toggle{
-display:none;
-z-index:1;
+
+#music-toggle, .file-io-buttons, #resume-editing-text{
+	display:none;
 }
 
 #user-document {
--webkit-appearance: none; 
-padding-top: 20px;
-padding-bottom: 10px;
-padding-left: 10px;
-padding-right: 10px;
-width: 100%;
-height: 85%;
- resize: none;
- outline: none;
-border: none;
-font-family: press_startregular, sans-serif; 
-font-size: 12px;
-background-color: #014e9d;
-color: #61aefd;
-overflow-y: scroll;
-box-sizing: border-box;
-
+	-webkit-appearance: none; 
+	padding-top: 20px 10px 10px 10px;
+	width: 100%;
+	height: 85%;
+ 	resize: none;
+ 	outline: none;
+	border: none;
+	font-family: press_startregular, sans-serif; 
+	font-size: 12px;
+	background-color: #014e9d;
+	color: #61aefd;
+	overflow-y: scroll;
+	box-sizing: border-box;
 }
-
 
 #button-tray {
-height:10%;
-background-color: #014e9d;
+	height:10%;
+	background-color: #014e9d;
 }
 
-.file-io-buttons {
-background-color: #014e9d;
-border: 1px solid #61aefd;
-color:#61aefd;
-font-family: press_startregular, sans-serif; 
-font-size: 14px;
-margin:1px;
-display: block-inline;
-float: left;
-padding: 2px;
-padding-top: 1px;
-padding-bottom: 1px;
-display: none;
-}
-
-.file-io-buttons:hover{
-background-color: #61aefd;
-color:#014e9d;
-cursor: pointer;
-
-}
-#box_unchecked{
-
-}
-
-#box_checked {
-width:30px;
-height:30px;
-background-color:  #61aefd;
-float:right;
-display: block-inline;
-margin-top: 20px;
-}
-#resume-editing-text {
-display:none;
-float: right;
-border: none;
-margin-top: 20px;
-
-}
-
-.file-io-buttons_alt {
-background-color: #014e9d;
-border: 10px solid #61aefd;
-color:#61aefd;
-font-family: press_startregular, sans-serif; 
-font-size: 5px;
-margin:1px;
-display: block-inline;
-float: left;
-padding: 2px;
-padding-top: 1px;
-padding-bottom: 1px;
-display:none;
-}
 .mobile-buttons{
-background-color: #014e9d;
-border: 3px solid #61aefd;
-color:#61aefd;
-font-family: press_startregular, sans-serif; 
-font-size: 14px;
-margin:1px;
-display: block-inline;
-float: left;
-padding: 5px;
-padding-top: 5px;
-padding-bottom: 5px;
-display: block-inline;
-
-}
-.mobile-buttons-right{
-background-color: #014e9d;
-border: 3px solid #61aefd;
-color:#61aefd;
-font-family: press_startregular, sans-serif; 
-font-size: 14px;
-margin:1px;
-display: block-inline;
-float: right;
-padding: 5px;
-padding-top: 5px;
-padding-bottom: 5px;
-display: block-inline;
-
+	background-color: #014e9d;
+	border: 3px solid #61aefd;
+	color:#61aefd;
+	font-family: press_startregular, sans-serif; 
+	font-size: 14px;
+	margin:1px;
+	float: left;
+	padding: 5px;
 }
 
-}
-.box_unchecked{
-width:10px;
-height:10px;
-background-color:  #014e9d;
-float:right;
-display: block-inline;
-margin-top: 2px;
-border: 5px solid #61aefd;
-display:none;
+.mobile-buttons.right{
+	float: right;
 }
 
-.box_checked {
-width:10px;
-height:10px;
-background-color:  #61aefd;
-float:right;
-display: block-inline;
-margin-top: 2px;
-display:none;
-}
