@@ -42,7 +42,7 @@ var Doogiewrite = {
         // If the save preference hasn't been set, assume the visitor is new and load the welcome message.
         if(this.savePref==null){
             var theDoc = document.getElementById("user-document");
-            theDoc.value = "Welcome to this!\n\nthis is a retro-inspired web-based text editor, just click on the screen and start typing to begin.\n\nIf you're running Chrome, you can hit command-shift-F to enter full-screen mode.\n\nThis message won't show the next time you load this page, but you can also hit refresh to clear this text.\n\nVERSION NOTES: After clicking SAVE, your .txt file will appear in another browser window where you can then save it to disk through File -> Save." ;
+            theDoc.value = "Welcome to DoogieWrite!\n\nthis is a retro-inspired web-based text editor, just click on the screen and start typing to begin.\n\nIf you're running Chrome, you can hit command-shift-F to enter full-screen mode.\n\nThis message won't show the next time you load this page, but you can also hit refresh to clear this text.\n\nVERSION NOTES: After clicking SAVE, your .txt file will appear in another browser window where you can then save it to disk through File -> Save." ;
             // Autosave, by default, is off.
             this.savePref=0;
             localStorage.setItem("savePref", this.savePref);
