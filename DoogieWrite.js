@@ -188,16 +188,6 @@ var Doogiewrite = {
     }
 };
 
-// var addToHomeConfig = {
-// animationIn: 'bubble',
-// animationOut: 'drop',
-// lifespan:10000,
-// expire:0,
-// touchIcon:true,
-// message:'Did you know you can add DoogieWrite to your home screen and use it offline? Just click `%icon`'
-// };
-
-
 function init(){
     Doogiewrite.init();
 }
