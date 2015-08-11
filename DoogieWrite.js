@@ -178,7 +178,7 @@ var Doogiewrite = {
         fileReader.readAsText(file);
     
         fileReader.onload = function(evt) {
-            document.getElementById("user-document").value = event.target.result;
+            document.getElementById("user-document").value = evt.target.result;
         }
     },
 
