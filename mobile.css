@@ -85,7 +85,7 @@ display: block-inline;
 margin-top: 20px;
 }
 #resume-editing-text {
-
+display:none;
 float: right;
 border: none;
 margin-top: 20px;
