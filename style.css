@@ -25,7 +25,7 @@ background-color: #014e9d;
 
 
 
-#doc-body {
+#user-document {
 padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 10px;
@@ -44,33 +44,35 @@ border-top: 0px solid #7373ff;
 
 }
 
-.mobileButtons{
+.mobile-buttons{
 display: none;
 
 }
-.mobileButtons_right{
+.mobile-buttons-right{
 
 display:none;
 
 }
-#buttonTray {
+#button-tray {
 height:10%;
 background-color: #014e9d;
 
 }
 #input {
-position:absolute;
-top:0;
-left:0;
-height:50px;
+position: absolute;
+top: -8px;
+left: -10px;
+height: 50px;
 border: red 1px solid;
-width: 120px; /* was 120 */
+width: 124px;
 opacity: 0;
+cursor: pointer;
 }
-.myButtons {
+.file-io-buttons, #resume-editing-text {
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;
+position: relative;
 font-family: Press Start, sans-serif; 
 margin:10px;
 display: block-inline;
@@ -82,16 +84,17 @@ padding-bottom: 10px;
 }
 #loadButton {
 position:relative;
+cursor: pointer;
 
 }
-.myButtons:hover{
+.file-io-buttons:hover{
 background-color: #61aefd;
 color:#014e9d;
 cursor: pointer;
 
 }
 
-#box{
+#autosave-toggle-box{
 width:20px;
 height:20px;
 background-color:  #014e9d;
@@ -99,9 +102,14 @@ float:right;
 display: block-inline;
 margin-top: 20px;
 border: 5px solid #61aefd;
+cursor:pointer;
+
 }
 
-#box.checked {
+#autosave-toggle-box:hover{
+	opacity: 0.7;
+}
+#autosave-toggle-box.checked {
 width:20px;
 height:20px;
 background-color:  #61aefd;
@@ -110,7 +118,7 @@ display: block-inline;
 margin-top: 20px;
 }
 
-#musicBox{
+#music-toggle{
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;
@@ -122,9 +130,17 @@ padding: 8px;
 padding-top: 5px;
 padding-bottom: 4px;
 z-index:1;
+cursor: pointer;
+width: 17px; 
+height: 28px;
+background: url(note-sprite.png) center 0 no-repeat;
 }
 
-#musicbox.checked {
+#music-toggle:hover{
+	opacity: 0.7;
+}
+
+#music-toggle.checked {
 z-index:1;
 background-color: #61aefd;
 border: 10px solid #61aefd;
@@ -136,8 +152,9 @@ float: left;
 padding: 8px;
 padding-top: 5px;
 padding-bottom: 4px;
+background-position: center -33px;
 }
-#resumeEditingButton {
+#resume-editing-text {
 
 float: right;
 border: none;
@@ -146,7 +163,7 @@ margin-top: 20px;
 }
 
 @media(max-width: 890px){
-#resumeEditingButton{
+#resume-editing-text{
 	font-size: 11px;
 	padding:10px;
 }
@@ -167,7 +184,7 @@ border:0 px solid red;
 overflow: hidden;
 }
 
-.myButtons_alt {
+.file-io-buttons_alt {
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;

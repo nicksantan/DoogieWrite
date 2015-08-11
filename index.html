@@ -5,79 +5,79 @@ Matteo Spinelli under the MIT license at
 http://cubiq.org/add-to-home-screen !
 -->
 
-<head>
+    <head>
 
-    <!-- Load Stylesheets -->
-    <link rel="stylesheet" href="add2home.css">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 780px)" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen and (min-width: 781px)" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <!-- Load Stylesheets -->
+        <link rel="stylesheet" href="add2home.css">
+        <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 780px)" />
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen and (min-width: 781px)" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-    <!-- Viewport and other mobile view options -->
-    <meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Viewport and other mobile view options -->
+        <meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- Load Javascript -->
-    <script type="application/javascript" src="add2home.js"></script>
-    <script type = "text/javascript" src = "jquery-1.5.min.js"></script> 
-    <script type = "text/javascript" src = "doogiewrite-v2.js"></script>
-    
-    <title>DoogieWrite</title>
+        <!-- Facebook Open Graph tags -->
 
-</head>
+        <meta property="og:title" content="DoogieWrite" />
+        <meta property="og:site_name" content="DoogieWrite"/>
+        <meta property="og:url" content="http://www.doogiewrite.com" />
+        <meta property="og:image" content="http://www.robysoft.net/doogiewritebox_300x400.jpg" />
+        <meta property="og:description" content="A web-based text editor by ROBYSOFT inspired by the journal-writing sequences of Doogie Howser M.D." />
 
-<body>
-    
-    <textarea id = "doc-body" autocorrect = "off">
-    </textarea>
+        <!-- Load Javascript -->
+        <script type="application/javascript" src="add2home.js"></script>
+        <script type = "text/javascript" src = "jquery-1.5.min.js"></script> 
+        <script type = "text/javascript" src = "doogiewrite-v2.js"></script>
+        
+        <title>DoogieWrite</title>
 
-    <div id = "buttonTray">
-        <div id = "emailButton" class = "mobileButtons">
-            EMAIL
+    </head>
+
+    <body>
+        
+        <textarea id = "user-document" autocorrect = "off">
+        </textarea>
+
+        <div id = "button-tray">
+            <div id = "email-button" class = "mobile-buttons">
+                EMAIL
+            </div>
+            <div id = "autosave-button" class = "mobile-buttons-right">
+                AUTOSAVE OFF
+            </div>
+            <div id = "save-button" class = "file-io-buttons">
+                SAVE
+            </div>
+            <div id = "load-button" class = "file-io-buttons">
+                <input type="file" id="input" onchange="Doogiewrite.fileImport(this.files)">
+                LOAD
+            </div>
+            <div id = "music-toggle"></div>
+        
+            <div id = "resume-editing-text">
+                Resume editing next time
+            </div>
+            <div id = "autosave-toggle-box"></div>
         </div>
-        <div id = "autosaveButton" class = "mobileButtons_right">
-            AUTOSAVE OFF
-        </div>
-        <div id = "saveButton" class = "myButtons">
-            SAVE
-        </div>
-        <div id = "loadButton" class = "myButtons">
-            <input type="file" id="input" onchange="Doogiewrite.fileImport(this.files)">
-            LOAD
-        </div>
-        <div id = "musicbox">
-            <img src = "note2.png" id = "notePic">
-        </div>
 
-   <!--  <div id ="changeColorButton" class = "myButtons">
-        Change colors
-    </div> -->
-    
-    <div id = "resumeEditingButton" class = "myButtons_alt">
-        Resume editing next time
-    </div>
-    <div id = "box" class = "box_unchecked">
-    </div>
-</div>
+        <audio preload="none" autobuffer id = "audio-player"> 
+            <source src="doogie.mp3" />
+        </audio>
 
-<audio preload="none" autobuffer id = "audioPl"> 
-    <source src="doogie.mp3" />
-</audio>
-
-<script = "text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-21955731-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-
-</body>
-
+        <!-- Add Google Analytics -->
+        <script = "text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-21955731-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
 </html>
 

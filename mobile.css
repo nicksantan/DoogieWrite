@@ -21,38 +21,12 @@ background-color: #014e9d url(whitey.png)
 -webkit-appearance: none; 
 
 }
-#musicBox{
+#music-toggle{
 display:none;
 z-index:1;
 }
-.musicbox_unchecked{
-background-color: #014e9d;
-border: 10px solid #61aefd;
-color:61aefd;
-font-family: Press Start, sans-serif; 
-margin:10px;
-display: block-inline;
-float: left;
-padding: 8px;
-padding-top: 5px;
-padding-bottom: 4px;
-z-index:1;
-}
 
-.musicbox_checked {
-z-index:1;
-background-color: #61aefd;
-border: 10px solid #61aefd;
-color:#61aefd;
-font-family: Press Start, sans-serif; 
-margin:10px;
-display: block-inline;
-float: left;
-padding: 8px;
-padding-top: 5px;
-padding-bottom: 4px;
-}
-#doc-body {
+#user-document {
 -webkit-appearance: none; 
 padding-top: 20px;
 padding-bottom: 10px;
@@ -67,19 +41,17 @@ font-family: Press Start, sans-serif;
 font-size: 12px;
 background-color: #014e9d;
 color: 61aefd;
-
-
 overflow-y: scroll;
 
 }
 
 
-#buttonTray {
+#button-tray {
 height:10%;
 background-color: #014e9d;
 }
 
-.myButtons {
+.file-io-buttons {
 background-color: #014e9d;
 border: 1px solid #61aefd;
 color:61aefd;
@@ -94,7 +66,7 @@ padding-bottom: 1px;
 display: none;
 }
 
-.myButtons:hover{
+.file-io-buttons:hover{
 background-color: #61aefd;
 color:#014e9d;
 cursor: pointer;
@@ -112,7 +84,7 @@ float:right;
 display: block-inline;
 margin-top: 20px;
 }
-#resumeEditingButton {
+#resume-editing-text {
 
 float: right;
 border: none;
@@ -120,7 +92,7 @@ margin-top: 20px;
 
 }
 
-.myButtons_alt {
+.file-io-buttons_alt {
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;
@@ -134,7 +106,7 @@ padding-top: 1px;
 padding-bottom: 1px;
 display:none;
 }
-.mobileButtons{
+.mobile-buttons{
 background-color: #014e9d;
 border: 3px solid #61aefd;
 color:61aefd;
@@ -149,7 +121,7 @@ padding-bottom: 5px;
 display: block-inline;
 
 }
-.mobileButtons_right{
+.mobile-buttons-right{
 background-color: #014e9d;
 border: 3px solid #61aefd;
 color:61aefd;
