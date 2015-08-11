@@ -1,7 +1,7 @@
 DoogieWrite
 ====================
 
-DoogieWrite is a web-based text editor by ROBYSOFT inspired by the journal-writing sequences of Doogie Howser M.D.
+DoogieWrite is a web-based text editor by [ROBYSOFT](http://www.robysoft.net/) inspired by the journal-writing sequences of Doogie Howser M.D.
 
 DoogieWrite is available at [doogiewrite.com](http://www.doogiewrite.com/).
 
