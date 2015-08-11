@@ -111,9 +111,6 @@ margin-top: 20px;
 }
 
 #musicBox{
-z-index:1;
-}
-.musicbox_unchecked{
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;
@@ -127,7 +124,7 @@ padding-bottom: 4px;
 z-index:1;
 }
 
-.musicbox_checked {
+#musicbox.checked {
 z-index:1;
 background-color: #61aefd;
 border: 10px solid #61aefd;
