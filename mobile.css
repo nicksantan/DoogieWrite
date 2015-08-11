@@ -1,8 +1,17 @@
 
 @font-face {
-	font-family: Press Start;
-	src: url('PrStart.ttf')
+    font-family: 'press_startregular';
+    src: url('fonts/prstart-webfont.eot');
+    src: url('fonts/prstart-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prstart-webfont.woff2') format('woff2'),
+         url('fonts/prstart-webfont.woff') format('woff'),
+         url('fonts/prstart-webfont.ttf') format('truetype'),
+         url('fonts/prstart-webfont.svg#press_startregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 
 html,body{
 height: 100%
@@ -37,7 +46,7 @@ height: 85%;
  resize: none;
  outline: none;
 border: none;
-font-family: Press Start, sans-serif; 
+font-family: press_startregular, sans-serif; 
 font-size: 12px;
 background-color: #014e9d;
 color: 61aefd;
@@ -55,7 +64,7 @@ background-color: #014e9d;
 background-color: #014e9d;
 border: 1px solid #61aefd;
 color:61aefd;
-font-family: Press Start, sans-serif; 
+font-family: press_startregular, sans-serif; 
 font-size: 14px;
 margin:1px;
 display: block-inline;
@@ -96,7 +105,7 @@ margin-top: 20px;
 background-color: #014e9d;
 border: 10px solid #61aefd;
 color:61aefd;
-font-family: Press Start, sans-serif; 
+font-family: press_startregular, sans-serif; 
 font-size: 5px;
 margin:1px;
 display: block-inline;
@@ -110,7 +119,7 @@ display:none;
 background-color: #014e9d;
 border: 3px solid #61aefd;
 color:61aefd;
-font-family: Press Start, sans-serif; 
+font-family: press_startregular, sans-serif; 
 font-size: 14px;
 margin:1px;
 display: block-inline;
@@ -125,7 +134,7 @@ display: block-inline;
 background-color: #014e9d;
 border: 3px solid #61aefd;
 color:61aefd;
-font-family: Press Start, sans-serif; 
+font-family: press_startregular, sans-serif; 
 font-size: 14px;
 margin:1px;
 display: block-inline;
