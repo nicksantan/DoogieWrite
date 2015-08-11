@@ -1,7 +1,14 @@
 html, body{
 background-color: #014e9d;
+height:100%;
 
 
+}
+
+body{
+	height: 100%;
+	margin-bottom: 0px;
+	margin-top:0px;
 }
 
 ::-webkit-scrollbar {  
@@ -46,9 +53,9 @@ border: 0px solid blue;
 font-family: press_startregular, sans-serif; 
 font-size: 100%;
 background-color: #014e9d;
-color: 61aefd;
+color: #61aefd;
 border-top: 0px solid #7373ff;
-
+box-sizing: border-box;
 
 }
 
@@ -79,7 +86,7 @@ cursor: pointer;
 .file-io-buttons, #resume-editing-text {
 background-color: #014e9d;
 border: 10px solid #61aefd;
-color:61aefd;
+color:#61aefd;
 position: relative;
 font-family: press_startregular, sans-serif; 
 margin:10px;
@@ -129,7 +136,7 @@ margin-top: 20px;
 #music-toggle{
 background-color: #014e9d;
 border: 10px solid #61aefd;
-color:61aefd;
+color:#61aefd;
 font-family: press_startregular, sans-serif; 
 margin:10px;
 display: block-inline;
@@ -195,7 +202,7 @@ overflow: hidden;
 .file-io-buttons_alt {
 background-color: #014e9d;
 border: 10px solid #61aefd;
-color:61aefd;
+color:#61aefd;
 font-family: press_startregular, sans-serif; 
 margin:10px;
 display: block-inline;
